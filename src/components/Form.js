@@ -22,6 +22,7 @@
               onChange={inputTextHandler}
               type="text" 
               className="todo-input" 
+              placeholder="Add your Task..."
                />
               <button className="todo-button" type="submit" onClick={submitTodoHandler}>
                 <i className="fas fa-plus-square"></i>

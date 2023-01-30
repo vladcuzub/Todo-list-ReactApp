@@ -19,25 +19,32 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 1rem;
+    
     
     }
-    form input{
+    form input, form button{
       padding: 0.5rem;
       font-size: 1rem;
       border: none;
       background: white;
-      margin: 0 0 0 1rem;
+      border: none;
+      outline: none;
     }
-      form button {
-          padding: 0.5rem;
-                border: none;
-                  font-size: 1rem;
-      }
+
+    input[type=text]:focus {
+      background-color: rgb(170, 249, 174);
+    }
+      
+        
     form button {
       color: #ff6f47;
       background: #f7fffe;
       cursor: pointer;
       transition: all 0.3s ease;
+      padding: 0.5rem;
+      border: none;
+      font-size: 1rem;
     }
     form button:hover {
       background: #ff6f47;
@@ -67,6 +74,7 @@
     .filter-todo {
       padding: 0.5rem;
       font-size: 12px;
+   
       
     }
     .todo li {
@@ -118,7 +126,7 @@
     
     /* Custom Select */
     .select {
-      margin: 1rem;
+      margin-left: 1rem;
       position: relative;
       overflow: hidden;
     }
